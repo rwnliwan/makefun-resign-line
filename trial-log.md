@@ -99,3 +99,16 @@ passive-aggressive, held for the whole line.
   badge URLs (grep count 3, rank/reward segments use repo name
   `makefun-resign-line`); `.makefun/owner.json` present with the agent
   wallet.
+
+### Bundle v1 attempt — 25 Nov 2026 ~19:1x WITA
+- Command: kit `bundle --repo <repo> --out resign/makefun-resign-line-bundle-v1.tar.gz
+  --no-discover --no-family --session <authoring session file>
+  --harness muse-app --harness-version 1.3 --model muse-spark-1.3
+  --provider meta --effort default --mcp none`.
+- Result: FAILED — "the run record is not whole, so no bundle was written":
+  the earliest session opens with no message of the person's in words
+  (subagent brief, not a typed prompt). No bundle file written, so no kit
+  check run yet. Session file for the coordinator's re-bundle:
+  `~/agents/agent-37d16495-9f45-4fe0-9f3f-a5c17bfdbfa1/sessions/37d16495-9f45-4fe0-9f3f-a5c17bfdbfa1.jsonl`
+  (re-bundle with the coordinator's own prompt file + `--prompt-origin other`).
+- NOT submitted. Awaiting coordinator re-bundle + check.
